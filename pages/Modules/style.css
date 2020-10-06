@@ -1,0 +1,129 @@
+/*Modul*/
+
+.main-flw{
+    position: relative;
+    margin-left: 10%;
+    width: 80%;
+    height: 100%;
+    background:rgba(0, 0, 0, 0.500);
+}
+
+.main-flw div{
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 23%;
+    height: 30%;
+    margin-left: 7%;
+    margin-top: 5%;
+    border: 3px solid rgba(0, 0, 0, 0.300);
+    background: rgba(0, 0, 0, 0.200);
+    text-align: center;
+    overflow: hidden;
+}
+
+.main-flw div:hover{
+    overflow-y: scroll;
+}
+
+.main-flw div span{
+    display: block;
+    position: relative;
+    font-size: 14pt;
+    line-height: 18px;
+    margin-top: 30px;
+    color: white;
+}
+
+
+
+
+.main-flw div span .bg-red{
+    margin-top: 5px;
+    padding: 5px;
+    font-size: 10pt;
+    background: rgba(139, 0, 0, 0.514);
+}
+
+.main-flw div span .pt8{
+    font-size: 8pt;
+}
+
+.main-flw div span .pt6{
+    font-size: 6pt;
+}
+
+.main-flw div .first{
+    margin-top: 10px;
+    color: purple;
+    padding-bottom: 10px;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.300);;
+    -webkit-animation: lol 6s infinite;
+    -ms-animation: lol 6s infinite;
+    animation: lol 6s infinite
+}
+
+.main-flw div .descrip{
+    font-size: 11.5pt;
+}
+
+.comp{
+    height: 1200px;
+}
+
+
+.main-flw div .modul{
+    margin-top: 0px;
+    padding: 10px;
+    border-top: 3px solid rgba(0, 0, 0, 0.300);
+    font-size: 11.5pt;
+}
+
+/*Modul*/
+
+@media (max-width:1100px){
+    .main-flw div{
+        width: 45%;
+        height: 350px;
+        margin-left: 2.5%;
+    }
+}
+
+@media (max-width:750px){
+    *{
+        font-size: 7pt;
+    }
+    .main-flw{
+        height: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: left;
+    }
+    .main-flw div{
+        width: 90%;
+        height: 350px;
+        margin-left: 5%;
+    }
+    .text-main ul #firstchild{
+        font-size: 15pt;
+    }
+}
+
+@media (max-width:400px){
+    .main-flw{
+        margin-left: 0;
+        width: 100%;
+        height: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: left;
+    }
+    .main-flw div{
+        width: 90%;
+        height: 300px;
+    }
+}

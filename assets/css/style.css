@@ -1,0 +1,450 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap";
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.bg-ph{
+    display: none;
+    position: fixed; z-index: -2;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+}
+.bg{
+    position: fixed; z-index: -2;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.phonk{
+    position: fixed; z-index: -1;
+    backdrop-filter: blur(8px);
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.700);
+}
+
+
+/*Top CSS*/
+
+.top{
+    position: fixed; left: 0; z-index: 10;
+    backdrop-filter: blur(800px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.500);
+}
+
+.top ul{
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+
+.top ul li{
+    position: relative;
+    display: flex;
+    float: left;
+    list-style-type: none;
+    height: 100%;
+    padding-left: 15px; padding-right: 15px;
+    color: rgb(255, 196, 0);
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.500);
+    font-size: 15px;
+    transition: 0.25s;
+    text-transform: uppercase;
+}
+
+.top ul li i{
+    margin-right: 5px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.top ul li:hover{
+    background: rgba(0, 0, 0, 0.700);
+    transition: 0.25s;
+}
+
+.top div{
+    position: absolute;
+    display: none;
+    height: 100%;
+    padding-left: 15px; padding-right: 15px;
+    color: rgb(255, 196, 0);
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    background: rgba(0, 0, 0, 0.500);
+    cursor: pointer;
+}
+
+.top ul div i{
+    font-size: 15px;
+}
+
+.top div:hover{
+    background: rgba(0, 0, 0, 0.700);
+    transition: 0.25s;
+}
+
+.up{
+    top: 0;
+}
+.down{
+    bottom: 0;
+}
+
+/*Main CSS*/
+
+.con-main{
+    margin-left: 0;
+    left: 0;
+    margin-top: 70px;
+    width: 100%;
+    height: 800px;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.main{
+    position: relative;
+    width: 100%;
+    height: 90%;
+    background:rgba(0, 0, 0, 0.500);
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img{
+    margin-top: 5px;
+    width: 270px;
+    height: 330px;
+    border-radius: 50px;
+    border-right: 3px solid black;
+    border-left: 3px solid black;
+    box-shadow: 0 0 15px black, 0 0 45px black, 0 0 105px black;
+    backdrop-filter: blur(15px);
+}
+
+
+
+
+.logotype{
+    border-radius: 100%;
+    width: 250px;
+    height: 250px;
+    margin-top: 20px;
+    -webkit-animation: loler 6s infinite;
+    -ms-animation: loler 6s infinite;
+    animation: loler 6s infinite
+}
+
+.main .text-main{
+    position: relative; z-index: 5;
+    color: white;
+    margin-top: -5px;
+    font-size: 14pt;
+}
+
+.text-main ul li{
+    margin-top: 10px;
+    list-style-type: none;
+    text-align: center;
+}
+
+.text-main ul #firstchild{
+    font-size: 30pt;
+}
+.text-main ul #firstchild n{
+-webkit-animation: lol 6s infinite;
+-ms-animation: lol 6s infinite;
+animation: lol 6s infinite;
+}
+.underfirst{
+    padding: 10px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 15px black, 0 0 45px black, 0 0 105px black;
+    background: rgba(0, 0, 0, 0.300);
+}
+
+.text-main ul li:last-child{
+    margin-top: 10px;
+}
+
+
+.footer{
+    position: relative;
+    border-top: 5px solid black;
+    width: 100%;
+    height: 10%;
+    background:rgba(0, 0, 0, 0.500);
+    font-size: 16pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+
+
+/*Colors*/
+
+.weight{
+    font-weight: 800;
+}
+
+.red{
+    color: darkred; 
+}
+
+.blues{
+    color: darkblue; 
+}
+
+.green{
+    color: darkgreen; 
+}
+
+.purple{
+    color: purple; 
+}
+
+.gray{
+    color: gray; 
+}
+
+.unr-in{
+    color: rgb(255, 96, 75);
+}
+
+.rainbow{
+    -webkit-animation: lol 6s infinite;
+    -ms-animation: lol 6s infinite;
+    animation: lol 6s infinite
+}
+
+/*Colors*/
+
+/*Main CSS*/
+
+
+
+/*Other shit*/
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+@-webkit-keyframes lol{
+    0% {
+        color: green
+    }
+
+    10% {
+        color: rgb(218, 218, 0)
+    }
+
+    20% {
+        color: rgb(214, 0, 0)
+    }
+
+    30% {
+        color: rgb(0, 153, 255)
+    }
+
+    40% {
+        color: silver
+    }
+
+    50% {
+        color: purple
+    }
+
+    60% {
+        color: rgb(0, 0, 187)
+    }
+
+    70% {
+        color: rgb(202, 0, 34)
+    }
+
+    80% {
+        color: rgb(179, 161, 0)
+    }
+
+    90% {
+        color: rgb(138, 0, 46)
+    }
+
+    100% {
+        color: green
+    }
+}
+
+
+
+@-webkit-keyframes loler{
+    0% {
+        border: 3px solid green;
+    }
+
+    10% {
+        border: 3px solid rgb(218, 218, 0);
+    }
+
+    20% {
+        border: 3px solid rgb(214, 0, 0);
+    }
+
+    30% {
+        border: 3px solid rgb(0, 153, 255);
+    }
+
+    40% {
+        border: 3px solid silver;
+    }
+
+    50% {
+        border: 3px solid purple;
+    }
+
+    60% {
+        border: 3px solid rgb(0, 0, 187);
+    }
+
+    70% {
+        border: 3px solid rgb(202, 0, 34);
+    }
+
+    80% {
+        border: 3px solid rgb(179, 161, 0);
+    }
+
+    90% {
+        border: 3px solid rgb(138, 0, 46);
+    }
+
+    100% {
+        border: 3px solid green;
+    }
+}
+
+/*Other shit*/
+
+
+@media (max-width:750px){
+    *{
+        font-size: 7pt;
+    }
+    .bg{
+        display: none;
+    }
+    .bg-ph{
+        display: block;
+    }
+    .top{
+        height: 40px;
+    }
+
+    .top ul li{
+        font-size: 10pt;
+    }
+
+    .text-main ul #firstchild{
+        font-size: 15pt;
+    }
+    .footer{
+        height: auto;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    /*Top CSS*/
+    .top{
+        height: 60px;
+    }
+    .top ul li{
+        padding-left: 30px; padding-right: 30px;
+    }
+    .top ul li i{
+        font-size: 18px;
+    }
+    .top ul li t{
+        display: none;
+    }
+    .top div{
+        padding-left: 30px; padding-right: 30px;
+        display: flex;
+    }
+    .top div i{
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width:400px){
+    *{
+        font-size: 5pt;
+    }
+    .text-main ul #firstchild{
+        font-size: 10pt;
+    }
+    .main{
+        height: 80%;
+        padding-bottom: 30px;
+    }
+    .top{
+        height: 30px;
+    }
+    .top ul li{
+        font-size: 7pt;
+    }
+    .footer{
+        height: auto;
+        margin-left: 0;
+        width: 100%;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    .main{
+        margin-left: 0;
+        width: 100%;
+    }
+   
+}
+
+@media (max-width:300px){
+    *{
+        font-size: 5pt;
+    }
+    .text-main ul #firstchild{
+        font-size: 8pt;
+    }
+    .top{
+        height: 20px;
+    }
+    .top ul li{
+        font-size: 5pt;
+    }
+}
